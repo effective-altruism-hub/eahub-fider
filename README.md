@@ -14,5 +14,5 @@
     CMD ["nginx", "-g", "daemon off;"]
     ```
 - `pg_dump --no-owner --no-privileges "postgres://postgres@postgres:5432/db?sslmode=disable" > local_db.sql`
-- `divio project pull db live`
+- `divio project push db live`
 - restore the old content of your Dockerfile

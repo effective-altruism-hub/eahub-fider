@@ -1,1 +1,5 @@
 .idea/
+backup.zip
+backup/
+local_db.sql
+local_db.sql.gz
