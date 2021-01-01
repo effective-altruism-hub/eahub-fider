@@ -1,5 +1,4 @@
 FROM divio/base:1.0-py3.9-slim-buster
-WORKDIR /app
-EXPOSE 80/tcp 443/tcp
-ENTRYPOINT ["/tini", "-g", "--"]
-CMD ["start", "web"]
+RUN apt update
+RUN apt install --yes nginx
+CMD ["nginx", "-g", "daemon off;"]
